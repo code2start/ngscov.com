@@ -1,8 +1,8 @@
 <?php
 // DB credentials.
-define('DB_HOST', 'localhost');
-define('DB_USER', 'ngscovuser');
-define('DB_PASS', 'ngscovP@ssw0rd');
+define('DB_HOST', 'mysql');
+define('DB_USER', 'root');
+define('DB_PASS', 'root');
 define('DB_NAME', 'ngscov');
 // Establish database connection.
 try {

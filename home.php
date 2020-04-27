@@ -31,15 +31,16 @@ if (strlen($_SESSION['userlogin']) == 0) {
             <div class="container">
 
                 <br><br>
+
                 <div class="row justify-content-md-center">
                     <div class="hero-unit center">
                         <?php
                         // Code for fecthing user full name on the bassis of username or email.
                         $username = $_SESSION['userlogin'];
-                        $query = $dbh->prepare("SELECT  FullName FROM userdata WHERE (UserName=:username || UserEmail=:username)");
+                        $query = $dbh->prepare("SELECT  fullname FROM userdata WHERE (username=:username || email=:username)");
                         $query->execute(array(':username' => $username));
                         while ($row = $query->fetch(PDO::FETCH_ASSOC)) {
-                            $username = $row['FullName'];
+                            $username = $row['fullname'];
                         }
                         ?>
                         <h1>Welcome Back <font face="Tahoma" color="red"><?php echo $username; ?> ! </font>
