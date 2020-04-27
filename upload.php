@@ -12,7 +12,7 @@ if (isset($_FILES['file']['name'][0])) {
     $project = $_POST['project'];
     $time = date('y-m-d-h-i-s');
     $path = "data/$time";
-    mkdir($path, 0777, true);
+    mkdir($path, 777, true);
     foreach ($_FILES['file']['name'] as $keys => $values) {
         //$upload = $path . $values;
         //move_uploaded_file($_FILES['file']['tmp_name'][$keys], $path . $values);
