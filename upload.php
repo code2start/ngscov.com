@@ -21,7 +21,7 @@ if (isset($_FILES['file']['name'][0])) {
             //$upload = $path . $values;
             //$ext = pathinfo($dist, PATHINFO_EXTENSION);
             $ext = '_R1_001.fastq.gz';
-            exec("./Phase3.sh $ext $project $path $adapter");
+            exec("Phase3.sh $ext $project $path $adapter");
             $upload = 'ok';
         }
     }
