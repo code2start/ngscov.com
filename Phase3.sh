@@ -1,3 +1,4 @@
+#!/bin/bash
 extension=$1
 run=$2     #run =provided by the user by default it is  "mandatory"
 path=$3    # provided by the dev team
