@@ -11,7 +11,7 @@ if (isset($_FILES['file']['name'][0])) {
     $adapter = $_POST['adapter'];
     $project = $_POST['project'];
     $time = date('y-m-d-h-i-s');
-    $path = "data/$time";
+    $path = "/mnt/EdicoNAS/NGSCOVDATA/$time";
     mkdir($path, 0777, true);
     foreach ($_FILES['file']['name'] as $keys => $values) {
         //$upload = $path . $values;
