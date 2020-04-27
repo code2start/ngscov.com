@@ -91,7 +91,7 @@ if (isset($_POST['login'])) {
         <div class="row h-100 justify-content-center align-items-center">
 
             <form id="loginForm" method="post">
-                <h1 class="text-center">NGSCOV</h1>
+                <h2 class="text-center h1">NGSCOV</h2>
                 <br>
                 <div class="form-group">
                     <label for="username" class="control-label">Username / Email</label>
